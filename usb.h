@@ -25,6 +25,45 @@ typedef uint8_t usb_bank;
 /// Callback on reset
 void usb_cb_reset(void);
 
+extern USB_SetupPacket usb_setup;
+extern uint8_t ep0_buf_in[USB_EP0_SIZE];
+extern uint8_t ep0_buf_out[USB_EP0_SIZE];
+extern volatile uint8_t USB_DeviceState;
+extern volatile uint8_t USB_Device_ConfigurationNumber;
+
+typedef size_t usb_size;
+typedef uint8_t usb_ep;
+typedef uint8_t usb_bank;
+
+/// Callback on reset
+void usb_cb_reset(void);
+
+extern USB_SetupPacket usb_setup;
+extern uint8_t ep0_buf_in[USB_EP0_SIZE];
+extern uint8_t ep0_buf_out[USB_EP0_SIZE];
+extern volatile uint8_t USB_DeviceState;
+extern volatile uint8_t USB_Device_ConfigurationNumber;
+
+typedef size_t usb_size;
+typedef uint8_t usb_ep;
+typedef uint8_t usb_bank;
+
+/// Callback on reset
+void usb_cb_reset(void);
+
+extern USB_SetupPacket usb_setup;
+extern uint8_t ep0_buf_in[USB_EP0_SIZE];
+extern uint8_t ep0_buf_out[USB_EP0_SIZE];
+extern volatile uint8_t USB_DeviceState;
+extern volatile uint8_t USB_Device_ConfigurationNumber;
+
+typedef size_t usb_size;
+typedef uint8_t usb_ep;
+typedef uint8_t usb_bank;
+
+/// Callback on reset
+void usb_cb_reset(void);
+
 /// Callback when a setup packet is received
 void usb_cb_control_setup(void);
 
