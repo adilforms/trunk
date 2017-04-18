@@ -63,6 +63,22 @@ void usb_disable_ep(usb_ep ep);
 
 /// Reset an endpoint, clearing pending transfers
 void usb_reset_ep(usb_ep ep);
+/// Called internally to configure the USB controller with the new address
+void usb_set_address(uint8_t addr);
+
+/// Configure and enable an endpoint
+void usb_enable_ep(usb_ep ep, uint8_t type, usb_size pkt_size);
+
+/// Disable an endpoint
+void usb_disable_ep(usb_ep ep);
+/// Called internally to configure the USB controller with the new address
+void usb_set_address(uint8_t addr);
+
+/// Configure and enable an endpoint
+void usb_enable_ep(usb_ep ep, uint8_t type, usb_size pkt_size);
+
+/// Disable an endpoint
+void usb_disable_ep(usb_ep ep);
 
 /// Set or clear stall on an endpoint
 void usb_set_stall_ep(usb_ep ep);
