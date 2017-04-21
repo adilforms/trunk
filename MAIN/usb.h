@@ -1,4 +1,6 @@
 //main02 dist
+//update rel2
+//update rel
 //update01
 #pragma once
 
@@ -63,6 +65,8 @@ void usb_disable_ep(usb_ep ep);
 
 /// Reset an endpoint, clearing pending transfers
 void usb_reset_ep(usb_ep ep);
+
+//test
 /// Called internally to configure the USB controller with the new address
 void usb_set_address(uint8_t addr);
 
@@ -90,6 +94,12 @@ bool usb_ep_ready(usb_ep ep);
 inline void usb_ep_wait_for_ready(uint8_t ep){
 	while (!usb_ep_ready(ep)) {};
 }
+
+/// Called internally to configure the USB controller with the new address
+void usb_set_address(uint8_t addr);
+
+/// Configure and enable an endpoint
+void usb_enable_ep(usb_ep ep, uint8_t type, usb_size pkt_size);
 
 /// Returns true if there is a completion pending on the endpoint
 bool usb_ep_pending(usb_ep ep);
